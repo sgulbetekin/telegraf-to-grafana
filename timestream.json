@@ -1,0 +1,584 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": "-- Grafana --",
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "gnetId": null,
+  "graphTooltip": 0,
+  "id": 2,
+  "iteration": 1607708593324,
+  "links": [],
+  "panels": [
+    {
+      "datasource": "Amazon Timestream",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {
+            "align": null,
+            "filterable": false
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 0
+      },
+      "id": 4,
+      "options": {
+        "showHeader": true
+      },
+      "pluginVersion": "7.3.5",
+      "targets": [
+        {
+          "database": "\"ec2Metrics\"",
+          "queryType": "raw",
+          "rawQuery": "SHOW MEASURES FROM ${dbName}.${tableMEM}",
+          "refId": "A",
+          "table": "${tableSYSTEM}"
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Measure Names MEM",
+      "type": "table"
+    },
+    {
+      "datasource": "Amazon Timestream",
+      "description": "",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {
+            "align": null,
+            "filterable": false
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 0
+      },
+      "id": 5,
+      "options": {
+        "showHeader": true
+      },
+      "pluginVersion": "7.3.5",
+      "targets": [
+        {
+          "database": "\"ec2Metrics\"",
+          "queryType": "raw",
+          "rawQuery": "SHOW MEASURES FROM ${dbName}.${tableCPU}",
+          "refId": "A",
+          "table": "${tableCPU}"
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Measure Names CPU",
+      "type": "table"
+    },
+    {
+      "datasource": "Amazon Timestream",
+      "description": "",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {
+            "align": null,
+            "filterable": false
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 8
+      },
+      "id": 7,
+      "options": {
+        "showHeader": true
+      },
+      "pluginVersion": "7.3.5",
+      "targets": [
+        {
+          "database": "\"ec2Metrics\"",
+          "queryType": "raw",
+          "rawQuery": "SHOW MEASURES FROM ${dbName}.${tableDISK}",
+          "refId": "A",
+          "table": "${tableDISK}"
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Measure Names DISK",
+      "type": "table"
+    },
+    {
+      "datasource": "Amazon Timestream",
+      "description": "",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {
+            "align": null,
+            "filterable": false
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 8
+      },
+      "id": 6,
+      "options": {
+        "showHeader": true
+      },
+      "pluginVersion": "7.3.5",
+      "targets": [
+        {
+          "database": "\"ec2Metrics\"",
+          "queryType": "raw",
+          "rawQuery": "SHOW MEASURES FROM ${dbName}.${tableSYSTEM}",
+          "refId": "A",
+          "table": "${tableCPU}"
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Measure Names SYSTEM",
+      "type": "table"
+    },
+    {
+      "aliasColors": {},
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": "Amazon Timestream",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {
+            "align": null,
+            "filterable": false
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "fill": 1,
+      "fillGradient": 0,
+      "gridPos": {
+        "h": 9,
+        "w": 18,
+        "x": 0,
+        "y": 16
+      },
+      "hiddenSeries": false,
+      "id": 2,
+      "legend": {
+        "avg": false,
+        "current": false,
+        "max": false,
+        "min": false,
+        "show": true,
+        "total": false,
+        "values": false
+      },
+      "lines": true,
+      "linewidth": 1,
+      "nullPointMode": "null",
+      "options": {
+        "alertThreshold": true
+      },
+      "percentage": false,
+      "pluginVersion": "7.3.5",
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "hide": false,
+          "queryType": "raw",
+          "rawQuery": "SELECT BIN(time, 1m) AS time_bin,\n    AVG(CASE WHEN measure_name = 'usage_user' THEN measure_value::double ELSE NULL END) AS avg_cpu_user,\n    AVG(CASE WHEN measure_name = 'usage_system' THEN measure_value::double ELSE NULL END) AS avg_cpu_system,\n    AVG(CASE WHEN measure_name = 'usage_idle' THEN measure_value::double ELSE NULL END) AS avg_cpu_idle,\n    AVG(CASE WHEN measure_name = 'usage_iowait' THEN measure_value::double ELSE NULL END) AS avg_cpu_iowait,\n    AVG(CASE WHEN measure_name = 'usage_steal' THEN measure_value::double ELSE NULL END) AS avg_cpu_steal,\n    AVG(CASE WHEN measure_name = 'usage_nice' THEN measure_value::double ELSE NULL END) AS avg_cpu_nice,\n    AVG(CASE WHEN measure_name = 'usage_guest' THEN measure_value::double ELSE NULL END) AS avg_cpu_guest,\n    AVG(CASE WHEN measure_name = 'usage_irq' THEN measure_value::double ELSE NULL END) AS avg_cpu_irq\nFROM ${dbName}.${tableCPU}\nWHERE measure_name IN (\n        'usage_user', 'usage_system', 'usage_idle', 'usage_iowait',\n        'usage_steal', 'usage_nice', 'usage_guest', 'usage_irq'\n    )\n    AND $__timeFilter\nGROUP BY BIN(time, 1m)\nORDER BY time_bin desc",
+          "refId": "A"
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "CPU Average",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        },
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    },
+    {
+      "aliasColors": {},
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": "Amazon Timestream",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {
+            "align": null,
+            "filterable": false
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "fill": 1,
+      "fillGradient": 0,
+      "gridPos": {
+        "h": 9,
+        "w": 18,
+        "x": 0,
+        "y": 25
+      },
+      "hiddenSeries": false,
+      "id": 8,
+      "legend": {
+        "avg": false,
+        "current": false,
+        "max": false,
+        "min": false,
+        "show": true,
+        "total": false,
+        "values": false
+      },
+      "lines": true,
+      "linewidth": 1,
+      "nullPointMode": "null",
+      "options": {
+        "alertThreshold": true
+      },
+      "percentage": false,
+      "pluginVersion": "7.3.5",
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "hide": false,
+          "queryType": "raw",
+          "rawQuery": "SELECT BIN(time, 1m) AS time_bin,\n    AVG(CASE WHEN measure_name = 'load1' THEN measure_value::double ELSE NULL END) AS avg_load_short,\n    AVG(CASE WHEN measure_name = 'load5' THEN measure_value::double ELSE NULL END) AS avg_load_medium,\n    AVG(CASE WHEN measure_name = 'load15' THEN measure_value::double ELSE NULL END) AS avg_load_long\nFROM ${dbName}.${tableSYSTEM}\nWHERE measure_name IN (\n        'load1', 'load5', 'load15')\n    AND $__timeFilter\nGROUP BY BIN(time, 1m)\nORDER BY time_bin desc",
+          "refId": "A"
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "Load Average",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        },
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    }
+  ],
+  "refresh": false,
+  "schemaVersion": 26,
+  "style": "dark",
+  "tags": [],
+  "templating": {
+    "list": [
+      {
+        "current": {
+          "selected": false,
+          "text": "ec2Metrics",
+          "value": "ec2Metrics"
+        },
+        "error": null,
+        "hide": 2,
+        "label": "Database Name",
+        "name": "dbName",
+        "options": [
+          {
+            "selected": true,
+            "text": "ec2Metrics",
+            "value": "ec2Metrics"
+          }
+        ],
+        "query": "",
+        "skipUrlSync": false,
+        "type": "textbox"
+      },
+      {
+        "current": {
+          "selected": false,
+          "text": "cpu",
+          "value": "cpu"
+        },
+        "error": null,
+        "hide": 2,
+        "label": "Table name for CPU",
+        "name": "tableCPU",
+        "options": [
+          {
+            "selected": true,
+            "text": "cpu",
+            "value": "cpu"
+          }
+        ],
+        "query": "",
+        "skipUrlSync": false,
+        "type": "textbox"
+      },
+      {
+        "current": {
+          "selected": false,
+          "text": "mem",
+          "value": "mem"
+        },
+        "error": null,
+        "hide": 2,
+        "label": "Table name for MEM",
+        "name": "tableMEM",
+        "options": [
+          {
+            "selected": true,
+            "text": "mem",
+            "value": "mem"
+          }
+        ],
+        "query": "",
+        "skipUrlSync": false,
+        "type": "textbox"
+      },
+      {
+        "current": {
+          "selected": false,
+          "text": "system",
+          "value": "system"
+        },
+        "error": null,
+        "hide": 2,
+        "label": "Table name for SYSTEM",
+        "name": "tableSYSTEM",
+        "options": [
+          {
+            "selected": true,
+            "text": "system",
+            "value": "system"
+          }
+        ],
+        "query": "",
+        "skipUrlSync": false,
+        "type": "textbox"
+      },
+      {
+        "current": {
+          "selected": false,
+          "text": "disk",
+          "value": "disk"
+        },
+        "error": null,
+        "hide": 2,
+        "label": "Table name for DISK",
+        "name": "tableDISK",
+        "options": [
+          {
+            "selected": true,
+            "text": "disk",
+            "value": "disk"
+          }
+        ],
+        "query": "",
+        "skipUrlSync": false,
+        "type": "textbox"
+      }
+    ]
+  },
+  "time": {
+    "from": "now-30m",
+    "to": "now"
+  },
+  "timepicker": {
+    "refresh_intervals": [
+      "10s",
+      "30s",
+      "1m",
+      "5m",
+      "15m",
+      "30m",
+      "1h",
+      "2h",
+      "1d"
+    ]
+  },
+  "timezone": "browser",
+  "title": "Amazon Timestream Dashboard",
+  "uid": "R-KHZcJGk",
+  "version": 14
+}
