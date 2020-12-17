@@ -15,8 +15,8 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "id": 2,
-  "iteration": 1608204678097,
+  "id": 3,
+  "iteration": 1608206568479,
   "links": [],
   "panels": [
     {
@@ -717,8 +717,8 @@
       "gridPos": {
         "h": 8,
         "w": 12,
-        "x": 0,
-        "y": 32
+        "x": 12,
+        "y": 24
       },
       "id": 4,
       "options": {
@@ -775,7 +775,7 @@
         "h": 8,
         "w": 12,
         "x": 0,
-        "y": 40
+        "y": 32
       },
       "id": 7,
       "options": {
@@ -941,7 +941,7 @@
     ]
   },
   "time": {
-    "from": "now-1h",
+    "from": "now-30m",
     "to": "now"
   },
   "timepicker": {
@@ -959,6 +959,6 @@
   },
   "timezone": "browser",
   "title": "Amazon Timestream Dashboard",
-  "uid": "em8oj_1Mk",
+  "uid": "8yvJkXJMz",
   "version": 1
 }
